@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DonutDelights</title>
+  <link rel="stylesheet" type="text/css" href="C:\Users\Elev\Documents\programmering 1\web inl\slutproject\css\order.css">
+	<link rel="stylesheet" type="text/css" href="C:\Users\Elev\Documents\programmering 1\web inl\slutproject\css\main.css">
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<img class="navbar_img" src="https://em-content.zobj.net/source/skype/289/doughnut_1f369.png" alt="DonutIcon">
+			<a class="title" href="C:\Users\Elev\Documents\programmering 1\web inl\slutproject\html\main.html">DonutDelights</a>
+			<li id="login_style"><button onclick="document.getElementById('id01').style.display='block'" class="login_button">Login</button></li>
+			<li><a href="C:\Users\Elev\Documents\programmering 1\web inl\slutproject\html\about.html">About Us</a></li>
+            <li><a href="C:\Users\Elev\Documents\programmering 1\web inl\slutproject\html\order.html">Order Now</a></li>
+		</ul>
+	</nav>
+  
+
+<script src="C:/Users/Elev/Documents/programmering 1/web inl/slutproject/js/main.js"></script>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img id="small_avatar" src="https://em-content.zobj.net/source/skype/289/doughnut_1f369.png" alt="DonutIcon" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="C:\Users\Elev\Documents\programmering 1\web inl\slutproject\html\password.html">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+<script>
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<div id="about-section"><h2>About us</h2>
+    <p>Welcome to DonutToGo, your ultimate destination for heavenly donuts! We are a fictitious online bakery specializing in crafting the most irresistible and delightful donut creations.
+        At DonutDelights, we understand the unique allure of donuts - their soft, pillowy texture, delectable flavors, and eye-catching toppings. We are dedicated to perfecting the art of donut-making, and our passion shines through in every bite.
+        Indulge in our wide assortment of handcrafted donuts, each one meticulously crafted with love and attention to detail. From classic glazed donuts to innovative flavors and seasonal specialties, we offer a tantalizing array of choices that will satisfy any donut lover's cravings.
+        Our skilled bakers use only the finest ingredients to ensure exceptional taste and quality. We take pride in creating donuts that are moist, flavorful, and perfectly balanced. Whether you prefer traditional flavors or adventurous combinations, DonutDelights has something to tempt your taste buds.
+        From the moment you visit our website, you'll be greeted with enticing images of our mouthwatering donut creations. Our online ordering process is quick and convenient, allowing you to select your favorite flavors and quantities with ease. We offer both pickup and delivery options, ensuring that you can enjoy our delectable donuts whenever and wherever you desire.
+        At DonutDelights, we believe that donuts are meant to be shared and enjoyed. Whether you're treating yourself, surprising a loved one, or hosting a special event, our donuts are sure to impress. We also offer custom orders for weddings, parties, and corporate events, allowing you to add a touch of sweetness to any occasion.
+        We take pride in providing exceptional customer service and ensuring your complete satisfaction. If you have any questions or special requests, our friendly and knowledgeable team is here to assist you every step of the way.
+        Thank you for choosing DonutDelights as your go-to destination for extraordinary donuts. Let us elevate your donut experience with our delectable creations. Place your order today and prepare to embark on a delightful journey of flavors and indulgence.</p>
+</div>
+  
+
+
+<div class="footer" style="margin-top: 37%;">
+  <div class="col-2">
+    <h3>COPYRIGHT 2023, BakeToGo<br>Contact</h3>
+    <form>
+      <input type="email" placeholder="Your Email Address"required><br>
+      <input type="text" placeholder="Your Message"required><br>
+      <button type="submit">SEND</button>
+    </form>
+  </div>
+  <div class="col-3">
+    <h3>CONTACT</h3>
+    <p>123, abc vägen<br>Skola, Mörby<br>+46 112 112 11</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

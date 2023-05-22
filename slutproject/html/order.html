@@ -1,0 +1,133 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Baking Website</title>
+  <link rel="stylesheet" type="text/css" href="C:\Users\Elev\Documents\programmering 1\web inl\slutproject\css\order.css">
+	<link rel="stylesheet" type="text/css" href="C:\Users\Elev\Documents\programmering 1\web inl\slutproject\css\main.css">
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<img class="navbar_img" src="https://em-content.zobj.net/source/skype/289/doughnut_1f369.png" alt="DonutIcon">
+			<a class="title" href="C:\Users\Elev\Documents\programmering 1\web inl\slutproject\html\main.html">DonutDelights</a>
+			<li id="login_style"><button onclick="document.getElementById('id01').style.display='block'" class="login_button">Login</button></li>
+			<li><a href="C:\Users\Elev\Documents\programmering 1\web inl\slutproject\html\about.html">About Us</a></li>
+			<li><a href="#cart">Cart (0)</a></li>
+		</ul>
+	</nav>
+  
+
+<script src="C:/Users/Elev/Documents/programmering 1/web inl/slutproject/js/main.js"></script>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img id="small_avatar" src="https://em-content.zobj.net/source/skype/289/doughnut_1f369.png" alt="DonutIcon" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="C:\Users\Elev\Documents\programmering 1\web inl\slutproject\html\password.html">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+
+<div id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Total: $0</p>
+  </div>
+  
+  <div id="products">
+    <div class="product" id="product-1">
+      <h3>Apple Cider Donut</h3>
+      <p>Price: $2</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product"id="product-2" >
+      <h3>Cherry Glazed Donut</h3>
+      <p>Price: $4</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product"id="product-3">
+        <h3>Baked Chocolate Donut</h3>
+        <p>Price: $6</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product" id="product-4">
+        <h3>Glazed Pumpkin Donut</h3>
+        <p>Price: $5</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+<script>
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+<div class="footer" style="margin-top: 10%;">
+  <div class="col-2">
+    <h3>COPYRIGHT 2023, DonutDelights<br>Contact</h3>
+    <form>
+      <input type="email" placeholder="Your Email Address"required><br>
+      <input type="text" placeholder="Your Message"required><br>
+      <button type="submit">SEND</button>
+    </form>
+  </div>
+  <div class="col-3">
+    <h3>CONTACT</h3>
+    <p>123, abc vägen<br>Skola, Mörby<br>+46 112 112 11</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

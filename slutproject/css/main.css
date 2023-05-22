@@ -1,0 +1,432 @@
+
+body {
+  background:url(https://www.tasty-donuts.de/wp-content/uploads/2021/09/Tasty-Donuts-and-Coffee.jpg)no-repeat center fixed;
+  background-size:cover;
+  background-image: url(https://www.tasty-donuts.de/wp-content/uploads/2021/09/Tasty-Donuts-and-Coffee.jpg);
+  background-color: rgb(255, 203, 241);
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+nav {
+  background-color: #df54b1;
+  width: 100%;
+  border-radius: 10px;
+  height: 80px;
+}
+
+.title{
+  position: relative;
+  font-family: roboto;
+  text-decoration:solid;
+  font-size:40px;
+  color:#650650;
+  background-color: none;
+  bottom: 20px;
+ 
+}
+nav ul a:hover{
+  color:rgb(255, 177, 250);
+text-shadow: 2px 2px#000;
+}
+.navbar_img{
+  width:6%;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style-type: none;
+ 
+  padding: 0px;
+  overflow: hidden;
+  bottom:10px;
+}
+
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 25px 25px;
+  text-decoration: none;
+  font-size: 20px;
+}
+@media only screen and (max-width: 782px) {
+  nav li a {
+    font-size: 14px;
+    padding:10px,10px;
+  }
+}
+  @media only screen and (max-width: 782px) {
+    .title{
+      font-size: 25px;
+      bottom:5px;
+    }
+}
+nav li a:hover {
+  background-color: #bb0eb5;
+  border-radius: 10px;
+}
+
+  
+@font-face{
+    font-family: roboto;
+    src:url(RobotoCondensed-Regular.ttf);
+  }
+@font-face{
+    font-family: robotobold;
+    src: url(RobotoCondensed-Bold.ttf);
+  }
+  /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+.slogan{
+font-family: roboto;
+text-align: center;
+justify-content: center;
+position: relative;
+top: 70px;
+font-size: 70px;
+color: #ffea00;
+font-style: italic;
+text-shadow:2px 2px #000  ;
+}
+
+img.avatar {
+  width: 17%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+
+.modal-content {
+  background-color: #ffe1fd;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+     border-radius:3px;
+  }
+}
+.login_button {
+  width:auto;
+  background-color: #6b0068;
+  color:#f30fd0;
+  border-radius: 4px;
+  box-shadow: 2px 3px #000;
+}
+
+#about-section {
+  background-color: #513c3c;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  bottom: 80px;
+  left: 0px; 
+  
+}
+
+#about-section h2 {
+  font-size: 24px;
+  color: #ffea00;
+  font-family: robotobold;
+  text-decoration: underline;
+}
+
+#about-section p {
+  font-size: 16px;
+  color: #d8d8d8;
+  line-height: 1.5;
+  font-family: roboto;
+  
+}
+
+.footer{
+  margin-top:100%;
+  padding: 40px 15%;
+  background: #333;
+  color:white;
+  display: flex;
+}
+.footer div {
+  text-align: center;
+  
+}
+.col-2{
+  flex-grow: 2;
+}
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  top: 700px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 330px;
+  height: 300px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 1150px;
+  transform: translateY(-50%);
+  font-size: 60px;
+  font-weight: bold;
+  padding: 10px;
+  color: #fffb00;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dots {
+  position: absolute;
+  top: 1350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #df54b1;
+
+}
+#timetable {
+  margin-top: 20px;
+  width: 100%;
+  position: absolute;
+  bottom:-300px;
+  left:0px;
+}
+
+table {
+ width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #725858;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 2px solid #a46d6d;
+}
+
+th {
+  background-color: #cfcfcf;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #b9b9b9;
+}
+#cart {
+  margin-top: 5px;
+  border: 1px solid #513c3c;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #513c3c;
+  border-radius: 4px;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.product {
+  border: 1px solid #513c3c;
+  padding: 10px;
+  color: #030000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.product p{
+  font-size: 15px;
+  background-color: #703d6e;
+width: 11%;
+}
+.product h3{
+  text-decoration: underline;
+  color: #000000;
+
+}
+
+.add-to-cart {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#product-1 {
+  background-image: url("C:/Users/Elev/Documents/programmering 1/web inl/slutproject/img/apple_donut.jpg");
+}
+
+#product-2 {
+  background-image: url("C:/Users/Elev/Documents/programmering 1/web inl/slutproject/img/cherry_donut.jpg");
+}
+
+#product-3 {
+  background-image: url("C:/Users/Elev/Documents/programmering 1/web inl/slutproject/img/chocolate_donut.jpg");
+}
+
+#product-4 {
+  background-image: url('C:/Users/Elev/Documents/programmering 1/web inl/slutproject/img/glazed_donut.jpg');
+} 
+
+@media screen and(max-width:783px){
+ nav li a ,.title{
+  width:10%;
+  bottom:0px;
+    font-size: 10px;
+    padding:10px,10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 200px;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product {
+    width: 150px;
+    margin: 5px;
+  }
+}
